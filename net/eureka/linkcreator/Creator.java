@@ -151,7 +151,7 @@ public final class Creator
 				else
 					directories = new File[]{file_chooser.getSelectedFile()};
 				
-				if(isAllDirectorys(directories))
+				if(isAllDirectories(directories))
 					return directories;
 			}
 			else if (action == JFileChooser.CANCEL_OPTION)
@@ -219,7 +219,7 @@ public final class Creator
 	 * @param directories - files to validate.
 	 * @return True if all are directories, false otherwise.
 	 */
-	private static boolean isAllDirectorys(File[] directories) 
+	private static boolean isAllDirectories(File[] directories) 
 	{
 		if(directories != null)
 			// Iterate over directories...
